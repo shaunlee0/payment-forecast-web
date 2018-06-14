@@ -29,4 +29,4 @@ npm install
 gulp serve
 ```
 
-Head to <http://localhost:3000/> to see the application. Make sure the API is running (see Readme for payment-forecast-api project on how to run that).
+Head to <http://localhost:3000/> to see the application. Make sure the API is running (see Readme for payment-forecast-api) before hitting "Go". 
