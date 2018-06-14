@@ -8,8 +8,12 @@ angular.module('paymentForecastApp')
             vm.message = 'Hello World Test';
 
 
-            vm.submit = function(){
-                console.log('Submitted');
+            vm.submit = function () {
+                $http.get("http://localhost:8080/payment-forecast/")
+                    .then(function (result) {
+                        console.log(result);
+                        vm.paymentForecast = result.data;
+                    });
             }
         }
     ]);
